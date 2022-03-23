@@ -8,7 +8,7 @@ Since the entity in question is a disk image it is best to open a case in the Sl
 ## Step 2
 After downloading the disk image and opening it in Autopsy, I start my investigation by searching for key phrases such as "flag" and "flag.txt". This method is good to use in CTFs because they are usually labeled like this so that participants can distinguish significant information.
 
-![](/OpOrchid_images/Operation_Orchid1.png)
+![](/picoCTF2022/OpOrchid_images/Operation_Orchid1.png)
 
 
 After search for these keywords a few important files stand out. The "flag.txt" file doesn't seem to have any useful information in it even though it looks like it should. So I moved on the the "".ash_history" file which presents several commands used in a Linux terminal.
@@ -21,7 +21,7 @@ This could be why the flag.txt file that was found did not provide the actual fl
 
 Another notable piece of information we can gather is that the user used the "-k" switch with a plaintext password.
 
-![](/OpOrchid_images/Operation_Orchid2.png)
+![](/picoCTF2022/OpOrchid_images/Operation_Orchid2.png)
 
 ## Step 3
 
@@ -35,10 +35,10 @@ Next, I use what I have learned to put together the terminal command:
 
 This command uses the tool Openssl enc and decrypts the input "flag.txt.enc" file and outputs the result to "flag.txt.new".
 
-![](/OpOrchid_images/Operation_Orchid4.png)
+![](/picoCTF2022/OpOrchid_images/Operation_Orchid4.png)
 
 Even though the output in the terminal gives a warning and claims a "bad decrypt" after looking at the input file we can see that they flag has been successfully decrypted.
 
-![](/OpOrchid_images/Operation_Orchid5.png)
+![](/picoCTF2022/OpOrchid_images/Operation_Orchid5.png)
 
 
