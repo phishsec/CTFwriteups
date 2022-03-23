@@ -8,7 +8,7 @@ Since this challenged presents a disk image the best way for me to approach it w
 ## Step 2
 Next, after Autopsy was finished analyzing I searched for all files on the disk that contained the "*.pub" extension.
 
-![[Pasted image 20220315162649.png]]
+![](/picoCTF2022/OpOni_images/OpOni1.png)
 
 
 After getting a few hits on .pub files I found one called "id_ed25519" which is a common public key signature system. 
@@ -27,10 +27,10 @@ and inserted the key I found in the Autopsy analysis like so,
 
 and get the following:
 
-![[Pasted image 20220315163549.png]]
+![](/picoCTF2022/OpOni_images/OpOni2.png)
 
 Now that I have remote access to the machine I search the directory, find a text file that holds the flag, and submit it.
 
-![[Pasted image 20220315163712.png]]
+![](/picoCTF2022/OpOni_images/OpOni3.png)
 
 
